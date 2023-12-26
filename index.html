@@ -6,53 +6,63 @@
   <title>Portfólio de Vitor Toneli</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="keywords" content="goleiro, jogador de futebol, estudioso, desenvolvedor de sites para crianças">
+  
+  <style>
+    /* Estilos adicionais para o fundo granulado */
+    .granulado {
+      background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"%3E%3Ccircle cx="20" cy="20" r="10" fill-opacity="0.15" fill="%2328A745" /%3E%3Ccircle cx="30" cy="10" r="10" fill-opacity="0.15" fill="%2328A745" /%3E%3Ccircle cx="10" cy="30" r="10" fill-opacity="0.15" fill="%2328A745" /%3E%3C/svg%3E');
+    }
+  </style>
 </head>
 <body class="bg-green-100 font-sans">
-  <header class="bg-green-500 p-4 text-white">
-    <h1 class="text-3xl font-semibold">Vitor Toneli</h1>
+  <header class="granulado bg-green-500 p-4 text-white">
+    <h1 class="text-3xl font-semibold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Vitor Toneli</h1>
     <p>Goleiro de Caratinga, MG</p>
   </header>
-
-  <main class="max-w-4xl mx-auto my-8 p-4 bg-white shadow-lg rounded-lg">
+  
+  <main class="max-w-4xl mx-auto my-8 p-4 bg-white shadow-lg rounded-lg mb-20">
     <section class="mb-8">
       <h2 class="text-2xl font-semibold mb-2">Sobre Mim</h2>
       <p>
         Vitor Toneli nasceu em 21 de dezembro de 2015, na bela cidade de Caratinga, MG. Estuda na Escola Jairo Grossi e é um apaixonado goleiro que treina todos os dias. Seu sonho é se tornar um goleiro profissional e, ao mesmo tempo, ajudar seu pai, Rodrigo Toledo, como programador web fullstack.
       </p>
     </section>
-
-    <!-- Área da imagem de perfil de Vitor -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-2">Imagem de Perfil</h2>
-      <img src="vitor_toneli.png" alt="Vitor Toneli" class="rounded-full w-32 h-32 object-cover">
-    </section>
-
-    <!-- Área para imagens dos pais e amigos -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Família e Amigos</h2>
-      <div class="flex space-x-4">
-        <!-- Imagem do pai (Rodrigo Toledo) -->
-        <div>
-          <img src="rodrigo_toledo.png" alt="Rodrigo Toledo" class="rounded-full w-20 h-20 object-cover">
-          <p class="text-center mt-2">Rodrigo Toledo</p>
+    
+    <div class="mx-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Área da imagem de perfil de Vitor -->
+      <section class="mb-8 mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-2">Imagem de Perfil</h2>
+        <img src="vitor_toneli.png" alt="Vitor Toneli" class="rounded-full w-32 h-32 object-cover mx-auto">
+      </section>
+      
+      <!-- Área para imagens dos pais e amigos -->
+      <section class="mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-2">Família e Amigos</h2>
+        <div class="flex space-x-4 justify-center">
+          <!-- Imagem do pai (Rodrigo Toledo) -->
+          <div>
+            <img src="rodrigo_toledo.png" alt="Rodrigo Toledo" class="rounded-full w-20 h-20 object-cover mx-auto">
+            <p class="text-center mt-2">Rodrigo Toledo</p>
+          </div>
+          
+          <!-- Imagem da mãe (Gislene Dornelas) -->
+          <div>
+            <img src="gislene_dornelas.png" alt="Gislene Dornelas" class="rounded-full w-20 h-20 object-cover mx-auto">
+            <p class="text-center mt-2">Gislene Dornelas</p>
+          </div>
+          
+          <!-- Imagem dos amigos -->
+          <div>
+            <img src="amigos.png" alt="Amigos de Vitor" class="rounded-full w-20 h-20 object-cover mx-auto">
+            <p class="text-center mt-2">Amigos</p>
+          </div>
         </div>
-
-        <!-- Imagem da mãe (Gislene Dornelas) -->
-        <div>
-          <img src="gislene_dornelas.png" alt="Gislene Dornelas" class="rounded-full w-20 h-20 object-cover">
-          <p class="text-center mt-2">Gislene Dornelas</p>
-        </div>
-
-        <!-- Imagem dos amigos -->
-        <div>
-          <img src="amigos.png" alt="Amigos de Vitor" class="rounded-full w-20 h-20 object-cover">
-          <p class="text-center mt-2">Amigos</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    
   </main>
-
-  <footer class="bg-green-500 p-4 text-white text-center">
+  
+  <footer class="bg-green-500 granulado p-4 text-white text-center bottom-0 fixed w-full">
     &copy; 2024 Vitor Toneli - Todos os direitos reservados
   </footer>
 </body>
